@@ -11,8 +11,6 @@ import React, { useEffect, useState } from 'react'
             if(lat!=undefined && lon!=undefined){
                 const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=tr&appid=bb1f56b5853f61427b08d3839d89db41`);
                 const data = await res.json();
-                console.log(data);
-    
                 setWeather(data);
             }
            
