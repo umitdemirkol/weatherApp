@@ -10,6 +10,7 @@ const searchWeather = ({ weather }) => {
             <div className='ahmet bg-black flex justify-center border-[1px] border-solid border-orange-400
               rounded-lg max-[520px]:w-auto max-[520px]:text-sm text-left
                 text-2xl p-5 font-mono'>
+                    
                     <ul className='bg-black'>
                         <li style={{color:"black"}}>Konum :{weather?.name} {weather?.sys?.country}</li>
                         <li  style={{color:"black"}} className='bg-inherit'>Durum :{weather?.weather?.map(weather => weather.description).join(",")}</li>
